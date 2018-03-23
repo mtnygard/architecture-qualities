@@ -17,35 +17,7 @@ odds. That's why we have these conversations, so we can find out the
 customer's priorities and jointly decide on the right tradeoffs and
 balances.
 
-# The Over-Arching Concern
-## Cost
-
-Cost is an architectural quality. Everything else we do here will
-increase cost. It's inherently in tension with all other architecture
-qualities.
-
-Nevertheless, there are still some tradeoffs available. You and your
-customer can decide:
-
-When to spend the money. You may be able to skimp on performance
-during "demo season", then spend more on improving performance and
-scalability later.
-
-Trade offs between development cost and operational cost. For example,
-data purging built into the app versus customer DBAs doing it by hand.
-
-On our side of things, cost and time are very directly connected. On
-the customer's side, though, it can be different. An extra iteration
-of scalability improvements may not pay back (c.f., Real Options) if
-they never need to scale up. On the other hand, they may be aiming for
-the stars, so the cost of an iteration would be dwarfed by the
-reduction in server cost. (E.g., optimize 50ms out of a page at
-Facebook scale and that equates to 1,000 servers!)
-
-Make sure you understand and capture your customer's desires about
-cost. "Money is no object" never comes up, but you may be surprised
-about the size of their support staff, the long-term revenue
-prospects, or the urgency of a demo to key executives.
+Drawn from "Software Architecture in Practice", by Len Bass, Paul Clements, and Rick Kazman.
 
 # Qualities Observable at Run-time
 
